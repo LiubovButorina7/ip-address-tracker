@@ -2,8 +2,6 @@
   "name": "ip-address-tracker-master",
   "version": "1.0.0",
   "main": "index.js",
-  "private": "true",
-  "homepage": "https://github.com/LiubovButorina7/ip-address-tracker",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html --out-dir=build",
