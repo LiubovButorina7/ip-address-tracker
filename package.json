@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --out-dir=build",
+    "parcel": "build index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
