@@ -172,7 +172,7 @@ function _getLocation() {
         case 0:
           _context.next = 2;
           return fetch("http://ipwho.is/".concat(ip), {
-            mode: 'cors'
+            mode: 'nocors'
           });
         case 2:
           response = _context.sent;
@@ -225,7 +225,10 @@ function _getUserIp() {
         case 0:
           _context.next = 2;
           return fetch('http://ipwho.is/', {
-            mode: 'cors'
+            method: 'GET',
+            headers: {
+              'Access-Control-Allow-Origin': 'https://github.com/LiubovButorina7/ip-address-tracker'
+            }
           });
         case 2:
           response = _context.sent;
@@ -373,7 +376,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44003" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41355" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
