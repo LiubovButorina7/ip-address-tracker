@@ -6,9 +6,9 @@
   "scripts": {
 
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --public-url ./",
+    "build": "parcel build index.html --public-url ip-address-tracker",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
