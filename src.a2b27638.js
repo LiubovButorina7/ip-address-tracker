@@ -171,7 +171,9 @@ function _getLocation() {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return fetch("http://ipwho.is/".concat(ip));
+          return fetch("http://ipwho.is/".concat(ip), {
+            mode: 'cors'
+          });
         case 2:
           response = _context.sent;
           _context.next = 5;
@@ -222,7 +224,9 @@ function _getUserIp() {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return fetch('http://ipwho.is/');
+          return fetch('http://ipwho.is/', {
+            mode: 'cors'
+          });
         case 2:
           response = _context.sent;
           _context.next = 5;
@@ -369,7 +373,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40381" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44003" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
