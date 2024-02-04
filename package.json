@@ -6,7 +6,7 @@
   "scripts": {
 
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --public-url ip-address-tracker",
+    "build": "parcel build index.html --public-url /ip-address-tracker/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
