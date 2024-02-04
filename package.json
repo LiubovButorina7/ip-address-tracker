@@ -5,7 +5,7 @@
   "homepage": "https://github.com/LiubovButorina7/ip-address-tracker",
   "scripts": {
 
-    "start": "parcel index.html --open",
+    "start": "parcel index.html",
     "build": "parcel build index.html --public-url /ip-address-tracker/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
