@@ -45,7 +45,7 @@ function initMap()
       getLocation(ipInfo.ip)
         .then(location => renderIpInfo(location, true));
         
-      map.copyrights.add(`Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/LiubovButorina7/ip-address-tracker" target="_blank>Liubov Butorina.</a>`);
+      //map.copyrights.add(`Coded by <a href="https://github.com/LiubovButorina7/ip-address-tracker" target="_blank>Liubov Butorina.</a>`);
     });    
 }   
 
