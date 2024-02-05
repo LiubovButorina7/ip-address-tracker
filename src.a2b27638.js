@@ -309,13 +309,14 @@ function initMap() {
     map = new ymaps.Map(document.querySelector('.map'), {
       center: initCoordinates,
       zoom: 15,
-      controls: ['zoomControl'],
+      controls: [],
       suppressMapOpenBlock: true
     });
     (0, _helpers.getLocation)(ipInfo.ip).then(function (location) {
       return renderIpInfo(location, true);
     });
-    map.copyrights.add("Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\">Frontend Mentor</a>. Coded by <a href=\"https://github.com/LiubovButorina7/ip-address-tracker\" target=\"_blank>Liubov Butorina.</a>");
+
+    //map.copyrights.add(`Coded by <a href="https://github.com/LiubovButorina7/ip-address-tracker" target="_blank>Liubov Butorina.</a>`);
   });
 }
 function renderIpInfo(ipLocation) {
@@ -369,7 +370,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35963" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45935" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -110,6 +110,13 @@
   .map {
     min-height: calc(100vh - 200px);
   }
+
+  .repo {
+    position:relative;
+    bottom: 1rem;
+    background: none;
+    padding-left: 1rem;
+  }
   
   @media (min-width: 1024px) {
     .info {
