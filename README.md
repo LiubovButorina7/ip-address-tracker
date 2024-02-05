@@ -26,8 +26,10 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ## Screenshorts:
 
-![](./images/screenshots/)
-
+![](./images/screenshots/ip-tracker1.png)
+![](./images/screenshots/ip-tracker2.png)
+![](./images/screenshots/ip-tracker3.png)
+![](./images/screenshots/ip-tracker.png)
 
 ## Author:
 
