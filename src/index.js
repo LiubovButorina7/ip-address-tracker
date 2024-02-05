@@ -37,7 +37,7 @@ function initMap()
 
       map = new ymaps.Map(document.querySelector('.map'), {
         center: initCoordinates,
-        zoom: 14, 
+        zoom: 15, 
         controls: ['zoomControl'], 
         suppressMapOpenBlock: true,
       });
